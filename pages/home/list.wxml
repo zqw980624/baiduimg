@@ -1,0 +1,12 @@
+<!--pages/home/list.wxml-->
+<import src="/template/image.wxml"/>
+<view class='container'>
+  
+    <scroll-view  bindscrolltolower="more" scroll-y>
+      <view class='images-container'>
+        
+          <template is="list" wx:for="{{imgs}}" wx:for-item="list" data="{{list}}"/>
+        
+      </view>
+  </scroll-view>
+</view>

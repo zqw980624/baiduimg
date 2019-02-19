@@ -1,0 +1,16 @@
+<!-- 图片项目 -->
+<template name="item">
+  <view class='img-item' >
+    <image src="{{thumb}}" mode="widthFix" bindtap='showImg' data-src="{{middle}}"></image>
+    
+    <image src="/img/download.png" class='download' bindtap='download' data-src="{{middle}}"></image>
+    
+  </view>
+</template>
+
+<!-- 图片列表 -->
+<template name="list">
+  <view class='img-list'>
+    <template is="item" wx:for="{{list}}" data="{{...item}}"/>
+  </view>
+</template>
